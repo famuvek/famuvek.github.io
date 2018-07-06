@@ -1,0 +1,839 @@
+/* Global Styles */
+	body,html {
+    padding: 0;
+    margin: 0;
+    background: #222222;
+    color: white;
+    font-size: medium;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+	}
+
+    a:link {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    }
+
+    a:visited {
+    color: #fff;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: #c2c2c2;
+    text-decoration: none;
+    transition: all .2s ease-in;
+   }
+
+    a:active {
+    color: #c2c2c2;
+    text-decoration: none;
+    }
+    
+    .detalImagePreviewTable a:hover, .whatWedoImage a:hover {
+    background-color: rgba(255,255,255,0.4);
+    }
+
+    .footerContainer a:link, .footerContainer a:visited {
+    color: #7b7b7b;
+    text-decoration: none;
+    }
+
+    .footerContainer a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    }
+
+    /* Should contain every div. Isn't it called wrap? oh well, warp speed mr sulu */
+    .warper {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+
+    .maxWidth {
+    max-width: 1920px;
+    margin: auto;
+    }
+
+    .woodbg {
+    background-image: url("images/backg.jpg");
+    background-size: cover;
+    background-color: #e0b485;
+    }
+
+    .whitebg {
+    background-color: #fbf7f7;
+    }
+
+    .whitebgWithTree {
+    background-color: #fbf7f7;
+    background-image: url("images/treebackg2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .whitebgWithWood {
+    background-color: #f5f4f4;
+    }
+
+    .whitewoodbg {
+    background-image: url("images/treebackg.svg");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f4f4;
+    }
+
+    .graybg {
+     background-color: #ececec;
+    }
+
+    .brownbg {
+    background-color: #57371f;
+    }
+
+    .blackbg {
+    background-image: url("images/darkwoodbackg.jpg");
+    background-size: cover;
+    background-color: #0d0b09;
+    }
+
+    .centered {
+    text-align: center;
+    }
+
+    #menu {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.96em;
+    background: rgba(35,35,35,0.8);
+    z-index: 10;
+    transition: all .2s ease-in;
+    }
+
+    #menu:hover {
+    opacity: 1 !important;
+    }
+
+	#menu span {
+    margin-right: 4%;
+    }
+
+    #mobileMenuButton {
+    cursor: pointer;
+    color: #000;
+    }
+
+    #headerContainer { 
+    max-width: 24em;
+    margin-left: 4em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    }
+
+    #headerRow1 {
+    font-family: "Oswald", sans-serif;
+    font-size:2.56em;
+    text-align: center;
+    color: #000;
+    }
+
+    #headerRow2 {
+    font-family: "Roboto", sans-serif;
+    font-size:0.96em;
+    text-align: center;
+    padding: 0.16em 0em 0.16em 0em;
+    background: rgba(0,0,0,0.5);
+    letter-spacing: 0.1em;
+    color: #fff;
+    }
+
+    #headerRow3 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 0.96em;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    }
+
+    #logo {
+    width: 14em;
+    height: auto;
+    margin-top: 6em;
+    margin-left: -7em;
+    }
+
+/*
+one hell of a crossfade hack, problem: cant use absolute divs on top of each other cause layout done with floats.
+Solution: divs nested inside each other, so f1 -> f2 -> f3, are all nested, no contect and only have backgrounds.
+Problem: crossfade will also fades child, so fading f2 will also fades f3 out.
+Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fades out, makes it look like f3 faded to f1.
+*/
+
+@keyframes fadeOne{
+    0% {opacity: 0;}  
+    23% {opacity: 0;} 
+    38% {opacity: 1;} 
+    84% {opacity: 1;}
+    100% {opacity: 0;}
+    }    
+
+@keyframes fadeTwo {
+    0% {opacity: 0;}  
+    53% {opacity: 0;} 
+    69% {opacity: 1;} 
+    100% {opacity: 1;}
+    }
+
+@keyframes fadeButton {
+    0% {opacity: 1;}  
+    50% {opacity: 0;} 
+    75% {opacity: 0;} 
+    100% {opacity: 1;}
+    }
+
+    .EaseOut {
+    animation-name: fadeButton;
+    animation-iteration-count: 1;
+    animation-duration: .5s;
+    }
+
+    .workshopImage {
+    height: 22em;
+    background-position: center;
+    }
+
+    #f1 {
+    background-image: url("images/woodworkshop-1.jpg");
+    background-color: #836d53;
+    }
+    
+    #f2 {
+    animation-name: fadeOne;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    background-image: url("images/woodworkshop-2.jpg");
+    background-color: #846b58;
+    }
+    
+    #f3 {
+    animation-name: fadeTwo;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    background-image: url("images/woodworkshop-3.jpg");
+    background-color: #9d8377;
+    }
+
+    #workshopText {
+    max-width: 45em;
+    margin: 1.96em 1.6em 1.6em 2.4em;
+    min-height: 17em;
+    }
+
+    #workshopTextHeader {
+    font-family: 'Oswald', serif;
+    display: block;
+    color: #000;	
+    font-size:1.44em;
+    }
+
+    #workshopTextBody {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    color: #000;	
+    font-size:0.9em;
+    }
+
+    #workshopTextBody span {
+    display: block;
+    margin-top: 0.8em;
+    }
+
+    #whatWeDo {
+   	font-family: "Oswald", sans-serif;
+    font-size:2.56em;
+    text-align: center;
+    display: block;
+    color: #5a4836;
+    height: 1.2em;
+   	margin-top: 0.4em;
+    }
+
+    .whatWeDoContainer {
+    margin-left: 4em;
+    margin-right: 4em;
+    }
+
+	.whatWeDoHeader {
+	font-family: "Roboto", sans-serif;
+    font-size:1.2em;
+    display: block;
+    color: #5a4836;
+    margin-top: 0.96em;
+    margin-bottom: 0.8em;
+	}
+
+	.whatWeDoText {
+	font-family: "Roboto", sans-serif;
+    display: block;
+    color: #000;	
+    font-size:0.9em;
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+    height: 3em;
+	}
+
+	.whatWedoImage {
+ 	background-size: cover;
+  	background-position: center;
+  	width: 100%;
+  	height: 12em;
+  	margin-bottom: 1.6em;
+	}
+
+    .whatWedoImage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+
+    .ActualImage1 {
+    background-image: url("images/cnc-machine.jpg");
+    background-color: #706f66;
+    }
+
+    .ActualImage2 {
+    background-image: url("images/co2-laser-cutter.jpg");
+    background-color: #706f66;
+    }
+
+    .ActualImage3 {
+    background-image: url("images/woodwork-machine.jpg");
+    background-color: #706f66;
+    }
+
+    .ActualImage4 {
+    background-image: url("images/cad-cam.jpg");
+    background-color: #706f66;
+    }
+
+	.detailContainer {
+	margin-left: 4em;
+	margin-top: 1.6em;
+	}
+
+	.detailHeader {
+    font-family: 'Oswald', serif;
+    display: block;
+    color: #000;	
+    font-size:1.44em;
+    }
+
+    .detailSubHeader {
+    font-family: "Roboto", sans-serif;
+    font-size:1.2em;
+    display: block;
+    color: #5a4836;
+    margin-top: 0.96em;
+    margin-bottom: 0.8em;
+    }
+
+    .DetailText {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    color: #000;	
+    font-size:0.9em;
+    margin-top: 0.8em;
+    margin-right: 4em;
+    margin-bottom: 1.6em;
+    }
+
+    .DetailText p {
+ 	margin: 0;
+    }
+
+    #detalImageContainer {
+  	height: 30em;
+	margin: 2.4em 4em 2em 4em;
+    }
+
+
+    .detalImagePreviewTableContainer {
+    height: 30em;
+    }
+
+    .detalImagePreviewTable {
+    width: 100%;
+    height: 100%;
+    padding: 1.6em 4em 2em 4em;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .detalImagePreviewTable a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+
+    #cncDetalImagePreviewLarge {
+    /*height: 22em;*/
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/cnc-decoration.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #cncDetalImagePreview1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/cnc-milled-house-number.jpg");
+    background-color: #a7ccd9;
+   }
+
+    #cncDetalImagePreview2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/aria-oar-cnc-work.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #cncDetalImagePreview3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/cnc-hdf-boxes.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserDetalImagePreviewLarge {
+    /*height: 22em;*/
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/blue-laser-wood-engrave-2.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/laser-engraved-wood.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/blue-laser-wood-engrave.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/laser-engraved-leather.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreviewLarge {
+    /*height: 22em;*/
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-lathe-dummies.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wooden-toy.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/woodwork-fence.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/art-easel.jpg");
+    background-color: #a7ccd9;
+    }
+
+
+    .operationsMaxWidt {
+    max-width: 1700px;
+    }
+
+    .operationsContainer {
+    max-width: 40em;
+    height: 12em;
+    margin: 3em auto 1em 4em;
+    border-collapse: collapse;
+    }
+
+    .operationsContainerRight {
+    margin: 9em 4em 1em auto;
+    }
+
+    .operationsTextLeft {
+    text-align: left !important;
+    }
+
+    .operationsImage {
+    width: 10em;
+    background-size: cover;
+    background-position: center;
+    }
+
+    #domesticImageLeft, #domesticImageRight {
+    background-image: url("images/glass-holder.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #domesticImageLeft {
+    display: none;
+    }
+
+    #commercialImage {
+    background-image: url("images/commercial-cnc-machining.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #industrialImage {
+    background-image: url("images/industrial-cnc-machining.jpg");
+    background-color: #a7ccd9;
+    }
+
+    .operationsTextContainer {
+    vertical-align: top;
+    }
+
+    .operationsTextHeader {
+    font-family: 'Oswald', serif;
+    color: #000;	
+    font-size:1.44em;
+    text-align: right;
+    margin: 0em 1em;
+    }
+
+    .operationsText {
+    margin: 0em 1.5em 0em 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    color: #000;
+    text-align: justify;
+    }
+
+    #contactUsWood {
+    overflow: hidden;
+    height: 16em;
+    background-size: cover;
+    background-image: url("images/woodtexture.jpg");
+    background-color: #a98054;
+    }
+
+    #contactUsTriangle {
+	width: 0; 
+	height: 0; 
+	border-bottom: 16em solid #57371f; 
+	border-right: 16em solid transparent;
+    }
+
+    #contactUsContainer {
+    display: inline-block;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    cursor: pointer;
+    }
+
+    #contactUsHeader:hover, #contactUsFooter:hover, #mobileMenuButton:hover {
+    color: #c2c2c2 !important;
+    text-decoration: none;
+    transition: all .2s ease-in;
+   }
+
+    #contactUsHeader:active {
+    color: #c2c2c2;
+    text-decoration: none;
+    }
+
+    #contactUsFooter {
+    cursor: pointer;
+    }
+
+    .disappearGracefully {
+    opacity: 0;
+    transition: all .2s ease-in;
+    }
+   
+    #contactUsHeader {
+    font-family: 'Oswald', serif;
+    display: block;
+    color: #fbf7f7;	
+    font-size:2.56em;
+    font-style: italic;
+    }
+
+    #contactUsSubHeader {
+    font-family: "Titillium Web", sans-serif;
+    font-size:1.2em;
+    display: block;
+    color: #be9150;
+    margin-top: 0.5em;
+    }
+
+    #contactUsText {
+    font-family: "Titillium Web", sans-serif;
+    font-size:1.2em;
+    display: block;
+    color: #fbf7f7;
+    }
+
+    #contactUsText p {
+    text-align: left;
+    margin: 0;
+    }
+
+    c1 {
+    color: #000;
+    }
+
+    c2 {
+    color: #bf9861;
+    }
+
+    .footermaxwidth {
+    margin: auto;
+    max-width: 1280px;
+    min-height: 25em;
+    }
+    
+	.footerContainer {
+	font-family: "Titillium Web", sans-serif;
+    font-size: 1em;
+	margin: 4em auto 1em auto;
+	display: inline-block;
+	text-align: left;
+	color: #7b7b7b;
+    height: 21em;
+    width: 80%;
+    overflow: hidden;
+	}
+
+    .bottomLineText {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #7b7b7b;
+    }
+
+	.footerContainer p {
+	padding: 0em 1em 1em 1em;
+	border-bottom: 1px #383838 solid;
+	}
+
+	f1 {
+	font-size:1.2em;
+    color: #bf9861;
+    }
+
+    f2 {
+    color: #bf9861;
+    }
+
+    f3 {
+    color: #bf9861;
+    }
+
+
+/* Responsive design break points */
+
+
+
+@media (min-width: 1367px) {
+
+     #contactUsContainer { margin-top: 5em; }
+     .centered-xl {
+        margin: auto;
+        text-align: center;
+        }
+    #domesticImageLeft { display: table-cell; }
+    #domesticImageRight { display: none; }
+    
+    .xl-25 {
+        float: left;
+        width: 25%;
+        }
+    
+    .xl-50 {
+        float: left;
+        width: 50%;
+        }
+    
+    .xl-75 {
+        float: left;
+        width: 75%;
+        }
+    
+    .xl-100 {
+        float: left;
+        width: 100%;
+        }
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+    
+     #contactUsContainer { margin-top: 5em; }
+    .operationsContainerRight, .operationsContainerRight-md { margin: 3em 4em 1em auto; }
+    .operationsTextResponsiveLeft {text-align: left !important;}
+
+    .centered-md {
+        margin: auto;
+        text-align: center;
+    }
+    /* simple responsive grid */
+    
+    .md-25 {
+        float: left;
+        width: 25%;
+        }
+    
+    .md-50 {
+        float: left;
+        width: 50%;
+        }
+    
+    .md-75 {
+        float: left;
+        width: 75%;
+        }
+    
+    .md-100 {
+        float: left;
+        width: 100%;
+        }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    #headerContainer { 
+    margin: 8em auto 1em auto; 
+    display: block;
+    }
+
+    #logo {
+    margin: 2em auto 2em auto; 
+    display: block;
+    }
+
+    #menu span { display: block; }
+
+    #workshopText { margin-left: 1em; margin-right: 1em; }
+
+    .operationsContainer { margin: 3em 1em 1em 1em; }
+    .operationsContainerRight, .operationsContainerRight-ms { margin: 3em 1em 1em auto; }
+    .whatWeDoContainer { margin-left: 0em; margin-right: 0em; }
+    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1em; margin-right: 1em; }
+    .detalImagePreviewTable { padding: 1.6em 0em 2em 0em; }
+    #contactUsWood { height: 8em; }
+    #contactUsTriangle { display: none; }
+    .footerContainer { margin: 1em auto 1em auto; }
+    .operationsTextResponsiveLeft {text-align: left !important;}
+    .mobileMenu span { margin-top: 2em; z-index: 11; }
+
+    .centered-ms {
+        margin: auto;
+        text-align: center;
+        }
+        
+    .ms-25 {
+        float: left;
+        width: 25%;
+        }
+    
+    .ms-50 {
+        float: left;
+        width: 50%;
+        }
+    
+    .ms-75 {
+        float: left;
+        width: 75%;
+        }
+    
+    .ms-100 {
+        float: left;
+        width: 100%;
+        }
+}
+
+@media (max-width: 480px) {
+
+    #headerContainer { 
+    margin: 6em auto 1em auto; 
+    display: block;
+    }
+
+    #logo {
+    margin: 1em auto 2em auto; 
+    display: block;
+    }
+
+    #menu span { display: block; }
+
+    #workshopText { margin-left: 1em; margin-right: 1em; }
+    .operationsContainer, .operationsContainerRight, .operationsContainerRight-ms { margin: 1em; }
+    .operationsText, .operationsTextHeader { margin: 0em;}
+    .whatWeDoContainer { margin-left: 0em; margin-right: 0em; }
+    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1em; margin-right: 1em; }
+    .detalImagePreviewTable { padding: 1.6em 0em 2em 0em; }
+    .DetailText {margin-right: 0em;}
+    #contactUsWood { height: 8em; }
+    #contactUsTriangle { display: none; }
+    .footerContainer { margin: 0em; height: auto; }
+    .operationsImage { display: none;}
+    .operationsTextResponsiveLeft {text-align: left !important;}
+    .mobileMenu span { margin-top: 2em; z-index: 11; }
+    
+    .centered-s {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .s-25 {
+        float: left;
+        width: 25%;
+        }
+    
+    .s-50 {
+        float: left;
+        width: 50%;
+        }
+    
+    .s-75 {
+        float: left;
+        width: 75%;
+        }
+    
+    .s-100 {
+        float: left;
+        width: 100%;
+        }
+}
+
+/* *{box-shadow:inset 0px 0px 0px 1px #762c2c; } */
