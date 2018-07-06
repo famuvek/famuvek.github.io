@@ -3,5 +3,5 @@ if (language.indexOf('en') > -1) {
 
 document.location.href = 'index-en.html';
 } else {
-document.location.href = 'index.html';
+document.location.href = 'index-hu.html';
 }
