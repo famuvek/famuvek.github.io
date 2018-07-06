@@ -1,7 +1,6 @@
 var language = navigator.language || navigator.browserLanguage; //for IE
-if (language.indexOf('en') > -1) {
-
-document.location.href = 'index-en.html';
-} else {
+if (language == "hu") {
 document.location.href = 'index-hu.html';
+} else {
+document.location.href = 'index-en.html';
 }
