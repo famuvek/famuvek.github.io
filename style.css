@@ -214,23 +214,23 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #f1 {
-    background-image: url("images/woodworkshop-1.jpg");
+    background-image: url("images/workshoplife-4.jpg");
     background-color: #836d53;
     }
     
     #f2 {
     animation-name: fadeOne;
     animation-iteration-count: infinite;
-    animation-duration: 15s;
-    background-image: url("images/woodworkshop-2.jpg");
+    animation-duration: 24s;
+    background-image: url("images/workshoplife-3.jpg");
     background-color: #846b58;
     }
     
     #f3 {
     animation-name: fadeTwo;
     animation-iteration-count: infinite;
-    animation-duration: 15s;
-    background-image: url("images/woodworkshop-3.jpg");
+    animation-duration: 24s;
+    background-image: url("images/workshoplife-5.jpg");
     background-color: #9d8377;
     }
 
@@ -390,28 +390,49 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     /*height: 22em;*/
     background-size: cover;
     background-position: center;
-    background-image: url("images/cnc-decoration.jpg");
+    background-image: url("images/cnc-wood-letters.jpg");
     background-color: #a7ccd9;
     }
 
     #cncDetalImagePreview1 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/cnc-milled-house-number.jpg");
+    background-image: url("images/wood-cnc-box.jpg");
     background-color: #a7ccd9;
    }
 
     #cncDetalImagePreview2 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/aria-oar-cnc-work.jpg");
+    background-image: url("images/wood-cnc-items.jpg");
     background-color: #a7ccd9;
     }
 
     #cncDetalImagePreview3 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/cnc-hdf-boxes.jpg");
+    background-image: url("images/wood-love-text.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #cncDetalImagePreview4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-cnc-brigi.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #cncDetalImagePreview5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-cnc-xmastree.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #cncDetalImagePreview6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/cnc-mdf-dogs.jpg");
     background-color: #a7ccd9;
     }
 
@@ -426,21 +447,42 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     #coLaserdetalImagePreview1 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/laser-engraved-wood.jpg");
+    background-image: url("images/wood-coin-holder.jpg");
     background-color: #a7ccd9;
     }
 
     #coLaserdetalImagePreview2 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/blue-laser-wood-engrave.jpg");
+    background-image: url("images/laser-engraved-leather.jpg");
     background-color: #a7ccd9;
     }
 
     #coLaserdetalImagePreview3 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/laser-engraved-leather.jpg");
+    background-image: url("images/wood-laser-clock.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/laser-wedding-house.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/laser-locket-ceremony.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #coLaserdetalImagePreview6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/laser-paper-y.jpg");
     background-color: #a7ccd9;
     }
 
@@ -448,28 +490,49 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     /*height: 22em;*/
     background-size: cover;
     background-position: center;
-    background-image: url("images/wood-lathe-dummies.jpg");
+    background-image: url("images/wood-lathe-mushrooms.jpg");
     background-color: #a7ccd9;
     }
 
     #woodWorkDetalImagePreview1 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/wooden-toy.jpg");
+    background-image: url("images/wood-toy-train.jpg");
     background-color: #a7ccd9;
     }
 
     #woodWorkDetalImagePreview2 {
     background-size: cover;
     background-position: center;
-    background-image: url("images/woodwork-fence.jpg");
+    background-image: url("images/wood-cnc-sledge.jpg");
     background-color: #a7ccd9;
     }
 
     #woodWorkDetalImagePreview3 {
     background-size: cover;
     background-position: center;
+    background-image: url("images/wood-shelf.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-cnc-solitarie.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview5 {
+    background-size: cover;
+    background-position: center;
     background-image: url("images/art-easel.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #woodWorkDetalImagePreview6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/woodwork-fence.jpg");
     background-color: #a7ccd9;
     }
 
@@ -500,7 +563,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #domesticImageLeft, #domesticImageRight {
-    background-image: url("images/glass-holder.jpg");
+    background-image: url("images/commercial-cnc-machining.jpg");
     background-color: #a7ccd9;
     }
 
@@ -509,7 +572,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #commercialImage {
-    background-image: url("images/commercial-cnc-machining.jpg");
+    background-image: url("images/glass-holder.jpg");
     background-color: #a7ccd9;
     }
 
@@ -835,5 +898,3 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
         width: 100%;
         }
 }
-
-/* *{box-shadow:inset 0px 0px 0px 1px #762c2c; } */
