@@ -109,13 +109,13 @@
     }
 
     #menu {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     text-align: right;
     position: fixed;
     width: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 0.96em;
+    font-size: 0.96rem;
     background: rgba(35,35,35,0.8);
     z-index: 10;
     transition: all .2s ease-in;
@@ -135,42 +135,42 @@
     }
 
     #headerContainer { 
-    max-width: 24em;
-    margin-left: 4em;
-    margin-top: 8em;
-    margin-bottom: 8em;
+    max-width: 24rem;
+    margin-left: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     }
 
     #headerRow1 {
     font-family: "Oswald", sans-serif;
-    font-size:2.56em;
+    font-size:2.56rem;
     text-align: center;
     color: #000;
     }
 
     #headerRow2 {
     font-family: "Roboto", sans-serif;
-    font-size:0.96em;
+    font-size:0.96rem;
     text-align: center;
-    padding: 0.16em 0em 0.16em 0em;
+    padding: 0.16em 0em 0.16em 0rem;
     background: rgba(0,0,0,0.5);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: #fff;
     }
 
     #headerRow3 {
     font-family: "Titillium Web", sans-serif;
-    font-size: 0.96em;
-    padding: 0.4em 0.4em 0.4em 0.4em;
+    font-size: 0.96rem;
+    padding: 0.4em 0.4em 0.4em 0.4rem;
     background: rgba(0,0,0,0.2);
     color: #fff;
     }
 
     #logo {
-    width: 14em;
+    width: 14rem;
     height: auto;
-    margin-top: 6em;
-    margin-left: -7em;
+    margin-top: 6rem;
+    margin-left: -7rem;
     }
 
 /*
@@ -209,7 +209,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     .workshopImage {
-    height: 22em;
+    height: 22rem;
     background-position: center;
     }
 
@@ -235,70 +235,98 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #workshopText {
-    max-width: 45em;
-    margin: 1.96em 1.6em 1.6em 2.4em;
-    min-height: 17em;
+    max-width: 45rem;
+    min-width: 20.25rem;
+    margin: 1rem 1.6rem 1rem 2.4rem;
+    min-height: 17rem;
     }
 
-    #workshopTextHeader {
-    font-family: 'Oswald', serif;
-    display: block;
-    color: #000;	
-    font-size:1.44em;
-    }
 
     #workshopTextBody {
     font-family: "Roboto", sans-serif;
     display: block;
-    color: #000;	
-    font-size:0.9em;
+    color: #000;    
+    font-size:0.9rem;
     }
 
     #workshopTextBody span {
     display: block;
-    margin-top: 0.8em;
+    }
+
+    h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 0.96rem;
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-align: center;
+    }
+
+    .spanspacer {
+    margin-bottom: 0.5rem;
+    display: inline-block;
     }
 
     #whatWeDo {
    	font-family: "Oswald", sans-serif;
-    font-size:2.56em;
+    font-size:2.56rem;
     text-align: center;
     display: block;
     color: #5a4836;
-    height: 1.2em;
-   	margin-top: 0.4em;
+   	margin-top: 0.4rem;
     }
 
     .whatWeDoContainer {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 4rem;
+    margin-right: 4rem;
     }
 
 	.whatWeDoHeader {
 	font-family: "Roboto", sans-serif;
-    font-size:1.2em;
+    font-size:1.2rem;
     display: block;
     color: #5a4836;
-    margin-top: 0.96em;
-    margin-bottom: 0.8em;
+    margin-top: 0.86rem;
+    margin-bottom: 0.6rem;
 	}
+
+    .whatWeDoHeader:hover {
+    color: #c2c2c2;
+    text-decoration: none;
+    transition: all .2s ease-in;
+   }
+
+    .whatWeDoHeader:active {
+    color: #c2c2c2;
+    text-decoration: none;
+    }
 
 	.whatWeDoText {
 	font-family: "Roboto", sans-serif;
     display: block;
     color: #000;	
-    font-size:0.9em;
-    margin-top: 0.8em;
-    margin-bottom: 2em;
-    height: 3em;
+    font-size:0.9rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    height: 3rem;
 	}
+
+    .whatWeDoText:hover {
+    color: #575757;
+    text-decoration: none;
+    transition: all .2s ease-in;
+   }
 
 	.whatWedoImage {
  	background-size: cover;
   	background-position: center;
   	width: 100%;
-  	height: 12em;
-  	margin-bottom: 1.6em;
+  	height: 12rem;
+  	margin-bottom: 1.6rem;
 	}
 
     .whatWedoImage a {
@@ -328,54 +356,63 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
 	.detailContainer {
-	margin-left: 4em;
-	margin-top: 1.6em;
+	margin-left: 4rem;
+	margin-top: 1.6rem;
 	}
 
-	.detailHeader {
+	.detailHeader, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0.5rem;
     font-family: 'Oswald', serif;
-    display: block;
-    color: #000;	
-    font-size:1.44em;
-    }
+    color: #5a4836;;
+    font-size: 1.44rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    } 
+
+    
 
     .detailSubHeader {
     font-family: "Roboto", sans-serif;
-    font-size:1.2em;
-    display: block;
+    font-size:1.2rem;
     color: #5a4836;
-    margin-top: 0.96em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5rem;
     }
 
     .DetailText {
     font-family: "Roboto", sans-serif;
-    display: block;
     color: #000;	
-    font-size:0.9em;
-    margin-top: 0.8em;
-    margin-right: 4em;
-    margin-bottom: 1.6em;
+    font-size:0.9rem;
+    }
+
+    .DetailTextList {
+    float: left;
+    width: 40%;
+    }
+
+    .DetailTextLong {
+    margin-right: 4rem;
     }
 
     .DetailText p {
- 	margin: 0;
+ 	margin: 0rem;
     }
 
     #detalImageContainer {
-  	height: 30em;
-	margin: 2.4em 4em 2em 4em;
+  	height: 30rem;
+	margin: 2.4rem 4rem 2rem 4rem;
     }
 
-
     .detalImagePreviewTableContainer {
-    height: 30em;
+    height: 30rem;
     }
 
     .detalImagePreviewTable {
     width: 100%;
     height: 100%;
-    padding: 1.6em 4em 2em 4em;
+    padding: 1.6rem 4rem 2rem 4rem;
     background-size: cover;
     background-position: center;
     }
@@ -387,7 +424,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreviewLarge {
-    /*height: 22em;*/
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/cnc-wood-letters.jpg");
@@ -395,6 +432,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreview1 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-box.jpg");
@@ -402,6 +440,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
    }
 
     #cncDetalImagePreview2 {
+    height: 50%; 
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-items.jpg");
@@ -409,6 +448,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreview3 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-love-text.jpg");
@@ -416,6 +456,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreview4 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-brigi.jpg");
@@ -423,6 +464,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreview5 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-xmastree.jpg");
@@ -430,6 +472,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #cncDetalImagePreview6 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/cnc-mdf-dogs.jpg");
@@ -437,7 +480,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserDetalImagePreviewLarge {
-    /*height: 22em;*/
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/blue-laser-wood-engrave-2.jpg");
@@ -445,6 +488,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview1 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-coin-holder.jpg");
@@ -452,6 +496,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview2 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/laser-engraved-leather.jpg");
@@ -459,6 +504,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview3 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-laser-clock.jpg");
@@ -466,6 +512,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview4 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/laser-wedding-house.jpg");
@@ -473,6 +520,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview5 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/laser-locket-ceremony.jpg");
@@ -480,6 +528,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #coLaserdetalImagePreview6 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/laser-paper-y.jpg");
@@ -487,7 +536,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreviewLarge {
-    /*height: 22em;*/
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-lathe-mushrooms.jpg");
@@ -495,6 +544,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview1 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-toy-train.jpg");
@@ -502,6 +552,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview2 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-sledge.jpg");
@@ -509,6 +560,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview3 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-shelf.jpg");
@@ -516,6 +568,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview4 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/wood-cnc-solitarie.jpg");
@@ -523,6 +576,7 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview5 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/art-easel.jpg");
@@ -530,11 +584,105 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     #woodWorkDetalImagePreview6 {
+    height: 50%;
     background-size: cover;
     background-position: center;
     background-image: url("images/woodwork-fence.jpg");
     background-color: #a7ccd9;
     }
+
+/* products new parts 
+heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrreeeeeee
+ */
+
+    #products {
+    font-family: "Oswald", sans-serif;
+    font-size:2.56rem;
+    text-align: center;
+    display: block;
+    color: #5a4836;
+    margin-top: 0.4rem;
+    }
+
+    .productsContainer {
+    max-width: 18rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .productsImage {
+    border-radius: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    height: 12rem;
+    transition: 0.3s
+    }
+
+    .productsImage:hover {
+    border-radius: 2rem;
+}
+
+    .productsImage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+
+    .productsHeader {
+    font-family: "Oswald", sans-serif;
+    font-size:1.44rem;
+    display: block;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #bf9861;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    }
+
+    .productsText {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    color: #000;    
+    font-size:0.9rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    }
+
+    .productsTextPrice {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    color: #bf9861;    
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    }
+
+    .productsOrder {
+    font-family: "Oswald", sans-serif;
+    display: block;
+    color: #000;    
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+    #productimage1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-cnc-solitarie.jpg");
+    background-color: #a7ccd9;
+    }
+
+    #productimage2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/wood-toy-train.jpg");
+    background-color: #a7ccd9;
+    }
+
 
 
     .operationsMaxWidt {
@@ -542,14 +690,14 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     .operationsContainer {
-    max-width: 40em;
-    height: 12em;
-    margin: 3em auto 1em 4em;
+    max-width: 40rem;
+    height: 12rem;
+    margin: 3rem auto 1rem 4rem;
     border-collapse: collapse;
     }
 
     .operationsContainerRight {
-    margin: 9em 4em 1em auto;
+    margin: 9rem 4rem 1rem auto;
     }
 
     .operationsTextLeft {
@@ -557,7 +705,8 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     }
 
     .operationsImage {
-    width: 10em;
+    width: 12rem;
+    border-radius: 12rem;
     background-size: cover;
     background-position: center;
     }
@@ -588,22 +737,22 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     .operationsTextHeader {
     font-family: 'Oswald', serif;
     color: #000;	
-    font-size:1.44em;
+    font-size:1.44rem;
     text-align: right;
-    margin: 0em 1em;
+    margin: 0rem 1rem;
     }
 
     .operationsText {
-    margin: 0em 1.5em 0em 1.5em;
+    margin: 0rem 1.5rem 0rem 1.5rem;
     font-family: "Roboto", sans-serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #000;
     text-align: justify;
     }
 
     #contactUsWood {
     overflow: hidden;
-    height: 16em;
+    height: 16rem;
     background-size: cover;
     background-image: url("images/woodtexture.jpg");
     background-color: #a98054;
@@ -618,8 +767,8 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
 
     #contactUsContainer {
     display: inline-block;
-    margin-top: 1.4em;
-    margin-bottom: 1.4em;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
     cursor: pointer;
     }
 
@@ -647,21 +796,21 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     font-family: 'Oswald', serif;
     display: block;
     color: #fbf7f7;	
-    font-size:2.56em;
+    font-size:2.56rem;
     font-style: italic;
     }
 
     #contactUsSubHeader {
     font-family: "Titillium Web", sans-serif;
-    font-size:1.2em;
+    font-size:1.2rem;
     display: block;
     color: #be9150;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     }
 
     #contactUsText {
     font-family: "Titillium Web", sans-serif;
-    font-size:1.2em;
+    font-size:1.2rem;
     display: block;
     color: #fbf7f7;
     }
@@ -682,35 +831,35 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
     .footermaxwidth {
     margin: auto;
     max-width: 1280px;
-    min-height: 25em;
+    min-height: 25rem;
     }
     
 	.footerContainer {
 	font-family: "Titillium Web", sans-serif;
-    font-size: 1em;
-	margin: 4em auto 1em auto;
+    font-size: 1rem;
+	margin: 4rem auto 1rem auto;
 	display: inline-block;
 	text-align: left;
 	color: #7b7b7b;
-    height: 21em;
+    height: 21rem;
     width: 80%;
     overflow: hidden;
 	}
 
     .bottomLineText {
     font-family: "Titillium Web", sans-serif;
-    font-size: 1em;
-    margin-bottom: 1em;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     color: #7b7b7b;
     }
 
 	.footerContainer p {
-	padding: 0em 1em 1em 1em;
+	padding: 0em 1em 1em 1rem;
 	border-bottom: 1px #383838 solid;
 	}
 
 	f1 {
-	font-size:1.2em;
+	font-size:1.2rem;
     color: #bf9861;
     }
 
@@ -729,14 +878,14 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
 
 @media (min-width: 1367px) {
 
-     #contactUsContainer { margin-top: 5em; }
+     #contactUsContainer { margin-top: 5rem; }
      .centered-xl {
         margin: auto;
         text-align: center;
         }
     #domesticImageLeft { display: table-cell; }
     #domesticImageRight { display: none; }
-    
+
     .xl-25 {
         float: left;
         width: 25%;
@@ -760,8 +909,8 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
 
 @media (min-width: 769px) and (max-width: 1366px) {
     
-     #contactUsContainer { margin-top: 5em; }
-    .operationsContainerRight, .operationsContainerRight-md { margin: 3em 4em 1em auto; }
+     #contactUsContainer { margin-top: 5rem; }
+    .operationsContainerRight, .operationsContainerRight-md { margin: 3rem 4rem 1rem auto; }
     .operationsTextResponsiveLeft {text-align: left !important;}
 
     .centered-md {
@@ -795,29 +944,29 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
 @media (min-width: 481px) and (max-width: 768px) {
 
     #headerContainer { 
-    margin: 8em auto 1em auto; 
+    margin: 8rem auto 1rem auto; 
     display: block;
     }
 
     #logo {
-    margin: 2em auto 2em auto; 
+    margin: 2rem auto 2rem auto; 
     display: block;
     }
 
     #menu span { display: block; }
 
-    #workshopText { margin-left: 1em; margin-right: 1em; }
+    #workshopText { margin-left: 1rem; margin-right: 1rem; }
 
-    .operationsContainer { margin: 3em 1em 1em 1em; }
-    .operationsContainerRight, .operationsContainerRight-ms { margin: 3em 1em 1em auto; }
-    .whatWeDoContainer { margin-left: 0em; margin-right: 0em; }
-    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1em; margin-right: 1em; }
-    .detalImagePreviewTable { padding: 1.6em 0em 2em 0em; }
-    #contactUsWood { height: 8em; }
+    .operationsContainer { margin: 3rem 1rem 1rem 1rem; }
+    .operationsContainerRight, .operationsContainerRight-ms { margin: 3rem 1rem 1rem auto; }
+    .whatWeDoContainer { margin-left: 0rem; margin-right: 0rem; }
+    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1rem; margin-right: 1rem; }
+    .detalImagePreviewTable { padding: 1.6rem 0rem 2rem 0rem; }
+    #contactUsWood { height: 8rem; }
     #contactUsTriangle { display: none; }
-    .footerContainer { margin: 1em auto 1em auto; }
+    .footerContainer { margin: 1rem auto 1rem auto; }
     .operationsTextResponsiveLeft {text-align: left !important;}
-    .mobileMenu span { margin-top: 2em; z-index: 11; }
+    .mobileMenu span { margin-top: 2rem; z-index: 11; }
 
     .centered-ms {
         margin: auto;
@@ -848,30 +997,29 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
 @media (max-width: 480px) {
 
     #headerContainer { 
-    margin: 6em auto 1em auto; 
+    margin: 6rem auto 1rem auto; 
     display: block;
     }
 
     #logo {
-    margin: 1em auto 2em auto; 
+    margin: 1rem auto 2rem auto; 
     display: block;
     }
 
     #menu span { display: block; }
 
-    #workshopText { margin-left: 1em; margin-right: 1em; }
-    .operationsContainer, .operationsContainerRight, .operationsContainerRight-ms { margin: 1em; }
-    .operationsText, .operationsTextHeader { margin: 0em;}
-    .whatWeDoContainer { margin-left: 0em; margin-right: 0em; }
-    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1em; margin-right: 1em; }
-    .detalImagePreviewTable { padding: 1.6em 0em 2em 0em; }
-    .DetailText {margin-right: 0em;}
-    #contactUsWood { height: 8em; }
+    #workshopText { margin-left: 1rem; margin-right: 1rem; }
+    .operationsContainer, .operationsContainerRight, .operationsContainerRight-ms { margin: 1rem; }
+    .operationsText, .operationsTextHeader { margin: 0rem;}
+    .whatWeDoContainer { margin-left: 0rem; margin-right: 0rem; }
+    .whatWeDoHeader, .whatWeDoText, .detailContainer { margin-left: 1rem; margin-right: 1rem; }
+    .detalImagePreviewTable { padding: 1.6rem 0rem 2rem 0rem; }
+    #contactUsWood { height: 8rem; }
     #contactUsTriangle { display: none; }
-    .footerContainer { margin: 0em; height: auto; }
+    .footerContainer { margin: 0rem; height: auto; }
     .operationsImage { display: none;}
     .operationsTextResponsiveLeft {text-align: left !important;}
-    .mobileMenu span { margin-top: 2em; z-index: 11; }
+    .mobileMenu span { margin-top: 2rem; z-index: 11; }
     
     .centered-s {
         margin: auto;
@@ -898,3 +1046,5 @@ Solution: 2 separate animatons, where f2 fades in, stays, f3 fades on top, f2 fa
         width: 100%;
         }
 }
+
+/* *{box-shadow:inset 0px 0px 0px 1px #762c2c; } */
