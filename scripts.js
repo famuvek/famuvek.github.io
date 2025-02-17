@@ -2,13 +2,13 @@ var cliked;
 var code = {
     mail: "V29vZGxhdGhlMjFAZ21haWwuY29t",
     phone: "KzM2IDIwLzI2MSAxMDU5",
-    address: "aHR0cHM6Ly9nb28uZ2wvbWFwcy9GMFk4Wg=="
+    address: "aHR0cHM6Ly9tYXBzLmFwcC5nb28uZ2wvWWRzemZFNUZaUTE4SGNoNDc="
 }
 var scroll_pos = 0;
-var VisibleWidth;
 var menuOpen = 0;
 var menuClick = 0;
 var lastScroll_pos = scroll_pos;
+var mobileWidth = (window.matchMedia('(max-width: 768px)').matches);
 
 $(document).ready(function() {
 
@@ -21,6 +21,7 @@ $(document).ready(function() {
     MobileMenuHandler();
 
     $(window).resize(function() {
+        mobileWidth = (window.matchMedia('(max-width: 768px)').matches);
         menuOpen = 0;
         ShouldHaveDoneThatWithCss();
         MenuScroll();
@@ -29,13 +30,12 @@ $(document).ready(function() {
 
     $(document).scroll(MenuScroll);
 
-    //makes workshop iamge  same height as text, probably can be done with css, no clue how tho.
+    //makes workshop image  same height as text, probably can be done with css, no clue how tho.
     function ShouldHaveDoneThatWithCss() {
-        VisibleWidth = $('.warper').width();
-        if (VisibleWidth > 769) {
-            $(".workshopImage").css('height', $('#workshopTextHeight').height());
+        if (mobileWidth == true) {
+            $(".workshopImage").css('height', '20rem');
         } else {
-            $(".workshopImage").css('height', '22em');
+            $(".workshopImage").css('height', $('#workshopTextHeight').height());
         }
     }
 
@@ -85,7 +85,7 @@ $(document).ready(function() {
         var yMax = 375;
         var yMin = 0;
 
-        if (VisibleWidth < 769) {
+        if (mobileWidth) {
             xMax = 0.3;
             xMin = 0.8;
             yMax = 681;
@@ -107,7 +107,7 @@ $(document).ready(function() {
 
         $("#menu").css('background-color', 'rgba(35,35,35,' + outputX.toFixed(2) + ')');
 
-        if (scroll_pos > 374 && !menuClick && VisibleWidth > 768) {
+        if (scroll_pos > 374 && !menuClick && !mobileWidth) {
             $("#menu").css('opacity', '0')
         } else {
             $("#menu").css('opacity', '1')
@@ -115,7 +115,7 @@ $(document).ready(function() {
     }
 
     function MobileMenuHandler() {
-        if (VisibleWidth < 769) {
+        if (mobileWidth) {
             $(".mobileMenu").hide();
             $("#mobileMenuButton").show();
         } else {
@@ -125,7 +125,7 @@ $(document).ready(function() {
     }
 
     $('#mobileMenuButton,.mobileMenu').on('click', function() {
-        if (VisibleWidth < 769) {
+        if (mobileWidth) {
             $('.mobileMenu').slideToggle();
             $("#menu").css('background-color', 'rgba(35,35,35,0.8)');
             if (!menuOpen) {
